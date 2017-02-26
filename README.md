@@ -35,3 +35,10 @@ good summary of classifier accuracy; tabulates actual classifications against pr
 ## Lists
 
 __Lists are R’s map structures.__ They can map strings to arbitrary objects. The important list operations [] and %in% are vectorized. This means that, when applied to a vector of values, they return a vector of results by performing one lookup per entry.
+
+## Examining the data
+```
+print(d[1:3,'Purpose'])
+summary(d$Purpose)
+table(d$Purpose,d$Good.Loan)
+```

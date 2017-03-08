@@ -42,3 +42,5 @@ print(d[1:3,'Purpose'])
 summary(d$Purpose)
 table(d$Purpose,d$Good.Loan)
 ```
+## How narrow is “too narrow” a data range?
+Of course, the term narrow is relative. If we were predicting the ability to read for chil- dren between the ages of 5 and 10, then age probably is a useful variable as-is. For data including adult ages, you may want to transform or bin ages in some way, as you don’t expect a significant change in reading ability between ages 40 and 50. You should rely on information about the problem domain to judge if the data range is nar- row, but a rough rule of thumb is the ratio of the standard deviation to the mean. If that ratio is very small, then the data isn’t varying much.

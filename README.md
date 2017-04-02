@@ -47,3 +47,6 @@ Of course, the term narrow is relative. If we were predicting the ability to rea
 
 ## Logarithmic scale used for plotting
 If the data is non-negative, then one way to bring out more detail is to plot the distribution on a logarithmic scale.  This is equivalent to plotting the density plot of log10(plot_variable); For example, the base 10 logarithm of 1000 is 3, as 10 to the power 3 is 1000.
+
+## When should you use a logarithmic scale?
+You should use a logarithmic scale when percent change, or change in orders of magnitude, is more important than changes in absolute units. You should also use a log scale to better visualize data that is heavily skewed.  For example, in income data, a difference in income of five thousand dollars means something very different in a population where the incomes tend to fall in the tens of thousands of dollars than it does in populations where income falls in the hundreds of thousands or millions of dollars. In other words, what constitutes a “significant difference” depends on the order of magnitude of the incomes you’re looking at. Similarly, in a population like that in figure 3.5, a few people with very high income will cause the majority of the data to be compressed into a relatively small area of the graph. For both those reasons, plotting the income distribution on a logarithmic scale is a good idea.

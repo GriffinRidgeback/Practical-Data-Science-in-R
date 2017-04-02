@@ -44,3 +44,6 @@ table(d$Purpose,d$Good.Loan)
 ```
 ## How narrow is “too narrow” a data range?
 Of course, the term narrow is relative. If we were predicting the ability to read for chil- dren between the ages of 5 and 10, then age probably is a useful variable as-is. For data including adult ages, you may want to transform or bin ages in some way, as you don’t expect a significant change in reading ability between ages 40 and 50. You should rely on information about the problem domain to judge if the data range is nar- row, but a rough rule of thumb is the ratio of the standard deviation to the mean. If that ratio is very small, then the data isn’t varying much.
+
+## Logarithmic scale used for plotting
+If the data is non-negative, then one way to bring out more detail is to plot the distribution on a logarithmic scale.  This is equivalent to plotting the density plot of log10(plot_variable); For example, the base 10 logarithm of 1000 is 3, as 10 to the power 3 is 1000.

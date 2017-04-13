@@ -131,3 +131,5 @@ custdata2 <- subset(custdata,
 & custdata$income > 0))
 cor(custdata2$age, custdata2$income)
 ```
+
+**Note:** There is a great deal of information in this section on plotting, so it should be referred to at a later date.

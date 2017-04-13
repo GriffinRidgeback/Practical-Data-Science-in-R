@@ -105,3 +105,29 @@ a population of workers might all get a 5% increase in salary (not an
 increase of $5,000/year across the board); you might want to project next quarter’s
 revenue to within 10% (not to within plus or minus $1,000). Hence, these quantities
 are often best modeled as having lognormal distributions.
+
+## Comparing variables using plotting
+
+### Line Plots
+First, let’s consider the relationship between two continuous variables. The most
+obvious way (though not always the best) is the line plot.
+Line plots work best when the relationship between two variables is relatively clean: each
+x value has a unique (or nearly unique) y value
+
+### Scatter Plots
+When the data is not so cleanly related, line plots aren’t as useful; you’ll want to use
+the scatter plot instead.
+
+**SCATTER PLOTS AND SMOOTHING CURVES**
+You’d expect there to be a relationship between age and health insurance, and also a
+relationship between income and health insurance. But what is the relationship
+between age and income? If they track each other perfectly, then you might not want
+to use both variables in a model for health insurance. The appropriate summary statistic
+is the correlation, which we compute on a safe subset of our data.
+
+```
+custdata2 <- subset(custdata,
+(custdata$age > 0 & custdata$age < 100
+& custdata$income > 0))
+cor(custdata2$age, custdata2$income)
+```

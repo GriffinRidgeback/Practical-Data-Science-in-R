@@ -81,3 +81,27 @@ density_standard_norm(2)
 ```
 
 They are equal. For non-standard normal it's same.
+
+## Lognormal distribution
+The lognormal distribution is the distribution of a random variable _X_ whose natural log
+**log(X)** is normally distributed. The distribution of highly skewed positive data, like
+the value of profitable customers, incomes, sales, or stock prices, can often be modeled
+as a lognormal distribution. A lognormal distribution is defined over all non-negative
+real numbers; it’s asymmetric, with a long tail out toward positive infinity. 
+The distribution of **log(X)** is a normal
+distribution centered at **mean(log(X))**. For lognormal populations, the mean is generally
+much higher than the median, and the bulk of the contribution toward the
+mean value is due to a small population of highest-valued data points.
+
+Intuitively, if variations in the data are expressed naturally as percentages or relative
+differences, rather than as absolute differences, then the data is a candidate to be
+modeled lognormally. For example, a typical sack of potatoes in your grocery store
+might weigh about five pounds, plus or minus half a pound. The length that a specific
+type of bullet will fly when fired from a specific type of handgun might be about 2,100
+meters, plus or minus 100 meters. The variations in these observations are naturally
+represented in absolute units, and the distributions can be modeled as normals. On
+the other hand, differences in monetary quantities are often best expressed as percentages:
+a population of workers might all get a 5% increase in salary (not an
+increase of $5,000/year across the board); you might want to project next quarter’s
+revenue to within 10% (not to within plus or minus $1,000). Hence, these quantities
+are often best modeled as having lognormal distributions.
